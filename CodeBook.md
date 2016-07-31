@@ -174,7 +174,7 @@ colnames(oneData) = colNames
     tidyData = merge(meanData, activityType, by="activityId", all.x=TRUE)
 
 #### Export tidyData
-    write.table(tidyData, "./tidyData.txt", row.names = TRUE, sep="\t")
+    write.table(tidyData, "./tidyData.txt", row.names = FALSE, sep="\t")
 
 
 The tidy data set is a set of variables for each activity and each subject. 10299 observations are segmented into 180 groups (30 subjects and 6 activities) with 18 mean and standard deviation features averaged for each group. 
