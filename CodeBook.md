@@ -86,7 +86,7 @@ rm(list=ls())
 ## 1. Merges the training and the test sets to create one data set.
 
 #### Set Working Directory to the location where UCI HAR Dataset was unzipped:
- setwd("/Users/a.rack.C3/Documents/UCI HAR Dataset/")
+    setwd("/Users/a.rack.C3/Documents/UCI HAR Dataset/")
 
 #### Read in the data from files
     features = read.table("./features.txt", header = FALSE)
@@ -96,29 +96,29 @@ rm(list=ls())
     yTrain = read.table("./train/y_train.txt", header = FALSE)
 
 #### Assign Column Names to the Train Data
- colnames(activityType) = c("activityId", "activityType")
- colnames(subjectTrain) = "subjectId"
- colnames(xTrain) = features[,2]
- colnames(yTrain) = "activityId"
+    colnames(activityType) = c("activityId", "activityType")
+    colnames(subjectTrain) = "subjectId"
+    colnames(xTrain) = features[,2]
+    colnames(yTrain) = "activityId"
 
 #### Create Training Dataset by Merging
- trainingData = cbind(yTrain, subjectTrain, xTrain)
+    trainingData = cbind(yTrain, subjectTrain, xTrain)
 
 #### Read in the Test Data
- subjectTest = read.table("./test/subject_test.txt", header = FALSE)
- xTest = read.table("./test/X_test.txt", header = FALSE)
- yTest = read.table("./test/y_test.txt", header = FALSE)
+    subjectTest = read.table("./test/subject_test.txt", header = FALSE)
+    xTest = read.table("./test/X_test.txt", header = FALSE)
+    yTest = read.table("./test/y_test.txt", header = FALSE)
 
 #### Assign Column Names to the Test Data
- colnames(subjectTest) = "subjectId"
- colnames(xTest) = features[,2]
- colnames(yTest) = "activityId"
+    colnames(subjectTest) = "subjectId"
+    colnames(xTest) = features[,2]
+    colnames(yTest) = "activityId"
 
 #### Create Test Dataset by Merging
- testData = cbind(yTest, subjectTest, xTest)
+    testData = cbind(yTest, subjectTest, xTest)
 
 #### Create One Dataset by Merging Training and Test Datasets
- oneData = rbind(trainingData, testData)
+    oneData = rbind(trainingData, testData)
 
 
 
