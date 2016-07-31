@@ -178,7 +178,7 @@ colnames(oneData) = colNames
 
 
 The tidy data set is a set of variables for each activity and each subject. 10299 observations are segmented into 180 groups (30 subjects and 6 activities) with 18 mean and standard deviation features averaged for each group. 
-The resulting data table has 180 rows and 21 columns: 
+The resulting data table has 180 rows and 21 columns. The columns are: 
 * subjectId (one of the 30 volunteers)
 * activityId (one of the 6 activities)
 * activityType (one of the 6 activities named descriptive)
