@@ -85,8 +85,10 @@ rm(list=ls())
 
 ## 1. Merges the training and the test sets to create one data set.
 
-Set Working Directory to the location where UCI HAR Dataset was unzipped:
+#### Set Working Directory to the location where UCI HAR Dataset was unzipped:
 setwd("/Users/a.rack.C3/Documents/UCI HAR Dataset/")
+
+
 
 
 
