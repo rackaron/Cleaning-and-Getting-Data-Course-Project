@@ -71,3 +71,28 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+## This script will do the folowing steps:
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement.
+3. Use descriptive activity names to name the activities in the data set.
+4. Appropriately labels the data set with descriptive variable names.
+5. From the data set in step 4, create a second, independent tidy data set 
+   with the average of each variable for each activity and each subject.
+
+### Clean up workspace
+rm(list=ls())
+
+## 1. Merges the training and the test sets to create one data set.
+
+Set Working Directory to the location where UCI HAR Dataset was unzipped:
+setwd("/Users/a.rack.C3/Documents/UCI HAR Dataset/")
+
+
+
+
+
+
+
+
+
