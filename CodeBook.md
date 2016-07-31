@@ -89,11 +89,11 @@ rm(list=ls())
  setwd("/Users/a.rack.C3/Documents/UCI HAR Dataset/")
 
 #### Read in the data from files
- features = read.table("./features.txt", header = FALSE)
- activityType = read.table("./activity_labels.txt", header = FALSE)
- subjectTrain = read.table("./train/subject_train.txt", header = FALSE)
- xTrain = read.table("./train/X_train.txt", header = FALSE)
- yTrain = read.table("./train/y_train.txt", header = FALSE)
+    features = read.table("./features.txt", header = FALSE)
+    activityType = read.table("./activity_labels.txt", header = FALSE)
+    subjectTrain = read.table("./train/subject_train.txt", header = FALSE)
+    xTrain = read.table("./train/X_train.txt", header = FALSE)
+    yTrain = read.table("./train/y_train.txt", header = FALSE)
 
 #### Assign Column Names to the Train Data
  colnames(activityType) = c("activityId", "activityType")
