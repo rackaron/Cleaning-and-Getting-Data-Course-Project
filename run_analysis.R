@@ -114,7 +114,7 @@ meanData  = aggregate(no_activityType[,names(no_activityType) != c('activityId',
 tidyData = merge(meanData, activityType, by="activityId", all.x=TRUE)
 
 # Export tidyData
-write.table(tidyData, "./tidyData.txt", row.names = TRUE, sep="\t")
+write.table(tidyData, "./tidyData.txt", row.names = FALSE, sep="\t")
 
 
 
